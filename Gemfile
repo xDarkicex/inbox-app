@@ -20,6 +20,7 @@ gem 'meta-tags'
 gem 'ckeditor'
 gem 'devise'
 gem 'mailboxer'
+gem 'bootstrap-sass'
 
 #outside rails assets
 source 'https://rails-assets.org' do
