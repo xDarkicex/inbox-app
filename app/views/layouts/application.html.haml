@@ -8,7 +8,7 @@
     = csrf_meta_tags
   %body
   = render 'layouts/nav'
-  = flash.each do |key, value|
+  - flash.each do |key, value|
     %div{:class => "text-center #{flash_class(key)}"}
       = value
 

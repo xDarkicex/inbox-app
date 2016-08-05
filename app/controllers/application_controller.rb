@@ -11,11 +11,12 @@ class ApplicationController < ActionController::Base
   def mailbox
     @mailbox ||= current_user.mailbox
   end
-  
+
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :name
-    devise_parameter_sanitizer.for(:accout_update) << :name
+    [:account_update, :sign_up].each do |i|
+      devise_parameter_sanitizer.permit(:name)
+    end
   end
 end
