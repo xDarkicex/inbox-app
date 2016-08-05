@@ -21,6 +21,8 @@ gem 'ckeditor'
 gem 'devise'
 gem 'mailboxer'
 gem 'bootstrap-sass'
+gem 'compass-rails', :git => 'https://github.com/Compass/compass-rails'
+gem 'chosen-rails', :git => 'https://github.com/tsechingho/chosen-rails'
 
 #outside rails assets
 source 'https://rails-assets.org' do
